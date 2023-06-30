@@ -1,2 +1,2 @@
 # calculator
-Calculator kata
+A JavaScript project
