@@ -8,7 +8,8 @@
     "dev:hot-reload": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
     "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev:watch dev:hot-reload",
     "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.js --target node --out-dir ./dist/",
-    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,13 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.43.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.22",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.5"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^1.14.9",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.8.1"
+  },
+  "dependencies": {
+    "jest": "^25.0.0"
   }
 }
